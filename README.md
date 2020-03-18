@@ -4,8 +4,9 @@
 
 * Python 2.7+
 * requests
+* beautifulsoup4 4.8.2
 
-##Installation
+## Installation
 
 ```bash
 git clone https://github.com/KazuOfficial/Youtube-Comments-Downloader
@@ -17,4 +18,9 @@ You can install packages with
 
     pip install requests
 
+    pip install beautifulsoup4
+
 ## Usage
+```
+
+```
