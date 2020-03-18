@@ -1,5 +1,7 @@
 # Youtube Comments Downloader
 
+[![Build Status](https://travis-ci.com/KazuOfficial/Youtube-Comments-Downloader.svg?branch=master)](https://travis-ci.com/KazuOfficial/Youtube-Comments-Downloader)
+
 ## Dependencies
 
 * Python 2.7+
