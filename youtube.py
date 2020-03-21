@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup as bs
 
 def main(argv):
 
-    APIKEY = "AIzaSyAvwAE0TnOTUZpDTsI2ru_o13ho2JWz8AM"
+    APIKEY = "YOUR_API_KEY"
 
     parser = argparse.ArgumentParser(add_help=False, description=('Youtube Comments Downloader made by Kazu'))
     parser.add_argument('--help', '-h', action='help', help='Show help message')
