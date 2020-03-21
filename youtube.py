@@ -27,7 +27,7 @@ def main(argv):
         if(youtubelink=="e" or youtubelink=="exit"):
             quit()
 
-        r = requests.get(url = "https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyAvwAE0TnOTUZpDTsI2ru_o13ho2JWz8AM&textFormat=plainText&part=snippet&videoId="+youtubelink+"&maxResults="+str(limit))
+        r = requests.get(url = "https://www.googleapis.com/youtube/v3/commentThreads?key=YOURAPIKEY&textFormat=plainText&part=snippet&videoId="+youtubelink+"&maxResults="+str(limit))
         print("Link is valid, processing...")
         print("Souping...")
         soup = bs(r.text,"lxml")
