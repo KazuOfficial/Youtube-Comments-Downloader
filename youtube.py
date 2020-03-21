@@ -7,6 +7,8 @@ from bs4 import BeautifulSoup as bs
 
 def main(argv):
 
+    APIKEY = "AIzaSyAvwAE0TnOTUZpDTsI2ru_o13ho2JWz8AM"
+
     parser = argparse.ArgumentParser(add_help=False, description=('Youtube Comments Downloader made by Kazu'))
     parser.add_argument('--help', '-h', action='help', help='Show help message')
     parser.add_argument('--limit', '-l', type=int, default=5, help='Limit number of comments (default: 5)')
@@ -27,7 +29,7 @@ def main(argv):
         if(youtubelink=="e" or youtubelink=="exit"):
             quit()
 
-        r = requests.get(url = "https://www.googleapis.com/youtube/v3/commentThreads?key=YOURAPIKEY&textFormat=plainText&part=snippet&videoId="+youtubelink+"&maxResults="+str(limit))
+        r = requests.get(url = "https://www.googleapis.com/youtube/v3/commentThreads?key=" + APIKEY + "&textFormat=plainText&part=snippet&videoId="+youtubelink+"&maxResults="+str(limit))
         print("Link is valid, processing...")
         print("Souping...")
         soup = bs(r.text,"lxml")
